@@ -1,6 +1,5 @@
 from taskmanager import db
 
-
 class Category(db.Model):
     # schema for the Category model
     id = db.Column(db.Integer, primary_key=True)
@@ -9,8 +8,6 @@ class Category(db.Model):
     
     def __repr__(self):
         return self.category_name
-    
-
 
 class Task(db.Model):
     # schema for the Task model
